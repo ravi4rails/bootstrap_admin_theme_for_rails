@@ -25,8 +25,6 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.files = 
-
   spec.files = Dir["lib/**/*"] + Dir["vendor/**/*"] + ["Rakefile", "README.md"]
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 
@@ -37,6 +35,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency 'railties', '~> 5.0', '>= 5.0.1'
+  spec.add_dependency 'actionpack', '~> 5.0', '>= 5.2.3'
+  spec.add_development_dependency 'rails', '~> 5.0', '>= 5.2.3'
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
