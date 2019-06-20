@@ -1,5 +1,5 @@
 require 'rails/generators'
-
+# This generator will add require assets to a rails application
 class InstallGenerator < ::Rails::Generators::Base
 
   def add_assets

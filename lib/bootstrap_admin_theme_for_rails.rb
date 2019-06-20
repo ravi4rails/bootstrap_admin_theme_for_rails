@@ -1,5 +1,5 @@
 require "bootstrap_admin_theme_for_rails/version"
-
+require "bootstrap_admin_theme_for_rails/railtie" if defined?(Rails)
 module BootstrapAdminThemeForRails
 
   class Error < StandardError; end
