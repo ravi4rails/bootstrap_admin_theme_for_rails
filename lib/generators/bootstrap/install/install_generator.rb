@@ -2,7 +2,7 @@ require 'rails/generators'
 # This generator will add require assets to a rails application
 module Bootstrap
   module Generators
-    class InstallGenerator < ::Rails::Generators::Base
+    class InstallGenerator < Rails::Generators::Base
 
       def add_assets
         js_manifest = 'app/assets/javascripts/application.js'
