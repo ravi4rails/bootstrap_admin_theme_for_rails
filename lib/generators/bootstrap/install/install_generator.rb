@@ -1,4 +1,4 @@
-require 'rails/generators'
+require 'rails/generators/base'
 # This generator will add require assets to a rails application
 module Bootstrap
   module Generators
